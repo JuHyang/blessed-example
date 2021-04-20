@@ -337,7 +337,7 @@ public class BluetoothCentralManager {
     }
 
     private void startScan(@NotNull final List<ScanFilter> filters, @NotNull final ScanSettings scanSettings, @NotNull final ScanCallback scanCallback) {
-        if (bleNotReady()) return;
+         if (bleNotReady()) return;
 
         if (isScanning()) {
             Timber.e("other scan still active, stopping scan");
